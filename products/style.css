@@ -1,0 +1,10 @@
+/* Reset default margin and padding to 0 for the body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the container to take the full viewport height and width */
+.container {
+    height: 100vh; /* Take the full viewport height */
+}

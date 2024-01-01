@@ -1,0 +1,11 @@
+/* Reset default margin and padding to 0 for the body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the container to take the full viewport height and width */
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: #ffff00;
+  font-weight: bold;
+}

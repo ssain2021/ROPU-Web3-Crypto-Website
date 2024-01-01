@@ -1,0 +1,6 @@
+--------------Node/NPM Scripts--------------
+8080 - login page
+3000 - register page
+5500 - reset password page
+10000 - account-details page
+5000 - presale page

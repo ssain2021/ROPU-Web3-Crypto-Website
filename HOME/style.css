@@ -1,0 +1,514 @@
+/* HOME CSS */
+@font-face { font-family: Sunny Spells; src: url('./assets/sunnyspellsfunfont.TTF'); }
+/*----- Common CSS ---- */
+
+
+* {
+  margin: 0px;
+}
+
+.flipped {
+  transform: scaleX(-1);
+}
+
+.pup1 {
+	transform: scaleX(-1) translateY(25%);
+}
+
+.section {
+   background-size: cover;
+   background-position: bottom left;  
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+.wave1 {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.intro .socials {
+  width: 200px;
+  height: 45px;
+  margin: 10px;
+  display: flex;
+  padding: 0px;
+}
+
+.intro .socials .social {
+  background: white;
+  width: 30%;
+  margin-right: auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 100px;
+  flex-wrap: wrap;
+}
+
+.intro .socials .social i {
+  font-size: 40px;
+}
+
+.wave1 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 161px;
+}
+
+.wave1 .shape-fill {
+    fill: #0582ff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: #ffff00;
+  font-weight: bold;
+}
+
+#presaleButton {
+  background: #ff9400;
+}
+
+#presaleButton:hover {
+  background: #ffa527;
+}
+
+.details-section div p {
+  position: relative;
+  top: 30px;
+  max-width: 600px;
+  font-size: 18px;
+  color: white;
+  width: 90vw;
+}
+
+tokenomics-section div div div {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+
+.timeline {
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  margin-left: -1px;
+  background-color: #000000;
+  width: 5px;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 20px 0;
+}
+
+.timeline-item-left {
+  left: 4%;
+}
+
+.timeline-item-right {
+  left: 51.5%;
+}
+
+.timeline-content {
+  position: relative;
+  width: 45%;
+  padding: 5px 20px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 15px;
+  background-image: url('./assets/rmboardbg.png');
+}
+
+.timeline-item-left .timeline-content {
+  right: 0;
+}
+
+.timeline-item-right .timeline-content {
+  left: 0;
+}
+
+/* Arrows */
+.timeline-item-left .timeline-content:after {
+  content: " ";
+  position: absolute;
+  left: 100%;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  border-width: 10px;
+  border-left-color: #000;
+  border-right: 0;
+  margin-top: -10px;
+  margin-left: -1px;
+}
+
+.timeline-item-right .timeline-content:after {
+  content: " ";
+  position: absolute;
+  right: 100%;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  border-width: 10px;
+  border-right-color: #000;
+  border-left: 0;
+  margin-top: -10px;
+  margin-right: -1px;
+}
+
+/* Timeline Headers and Content */
+.timeline-heading h4 {
+  margin-top: 0;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+  top: 2px;
+  color: white;
+}
+
+.timeline-month {
+  background: #f8f9fa;
+  padding: 10px;
+  border-bottom: 1px solid #e5e5e5;
+  height: 30px;
+}
+
+.timeline-month p {
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.timeline-body ul {
+  padding-left: 20px;
+}
+
+.timeline-body ul li {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: orange;
+}
+
+
+.tax-box {
+  color: white; 
+  position: relative;
+  font-size: 20px;
+  padding: 20px;
+  border: 5px solid white;
+  border-radius: 15px;
+  margin: 10px;
+  padding-right: 50px;
+  left: 25vw;
+  transform: translate(-25%, 0px);
+
+}
+
+
+
+.dropdown-menu li p {
+  font-weight: bold;
+  color: black;
+}
+
+footer div div {
+  font-size: 18px;
+  text-decoration-line: underline;
+}
+
+
+.accordion-button {
+    font-weight: bold;
+}
+
+.card {
+  width: 18rem; 
+  left: 50%; 
+  transform: translate(-50%); 
+  margin-bottom: 50px;
+  border: 3px solid blue;
+  box-shadow: 3px 3px 7px #9fccff;
+  border-top-left-radius: 85px;
+  border-top-right-radius: 85px;
+}
+
+.glow-point {
+  position: absolute;
+  box-shadow: 0rem 0rem 1rem 0.4rem rgb(239 42 201);
+  /*pointer-events: none;*/
+}
+
+.gift {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  font-size: 1rem;
+  animation-duration: 1500ms;
+  animation-fill-mode: forwards;
+  pointer-events: none;
+}
+
+@keyframes fall-1 {
+  0% {
+    transform: translate(0px, 0px) rotateX(45deg) rotateY(30deg) rotateZ(0deg) scale(0.25);
+    opacity: 0;
+  }
+  
+  5% {
+    transform: translate(10px, -10px) rotateX(45deg) rotateY(30deg) rotateZ(0deg) scale(1);
+    opacity: 1;
+  }
+  
+  100% {
+    transform: translate(25px, 200px) rotateX(180deg) rotateY(270deg) rotateZ(90deg) scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes fall-2 {
+  0% {
+    transform: translate(0px, 0px) rotateX(-20deg) rotateY(10deg) scale(0.25);
+    opacity: 0;
+  }
+  
+  10% {
+    transform: translate(-10px, -5px) rotateX(-20deg) rotateY(10deg) scale(1);
+    opacity: 1;
+  }
+  
+  100% {
+    transform: translate(-10px, 160px) rotateX(-90deg) rotateY(45deg) scale(0.25);
+    opacity: 0;
+  }
+}
+
+@keyframes fall-3 {
+  0% {
+    transform: translate(0px, 0px) rotateX(0deg) rotateY(45deg) scale(0.5);
+    opacity: 0;
+  }
+  
+  15% {
+    transform: translate(7px, 5px) rotateX(0deg) rotateY(45deg) scale(1);
+    opacity: 1;
+  }
+  
+  100% {
+    transform: translate(20px, 120px) rotateX(-180deg) rotateY(-90deg) scale(0.5);
+    opacity: 0;
+  }
+}
+
+#snow {
+  position: fixed;
+  pointer-events: none;
+  background: none;
+  z-index: 200;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/191814/flake1.png"),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/191814/flake2.png"),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/191814/flake3.png");
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  -webkit-animation: snow 10s linear infinite;
+  -moz-animation: snow 10s linear infinite;
+  -ms-animation: snow 10s linear infinite;
+  animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+@-moz-keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 400px 1000px, 200px 400px, 100px 300px;
+  }
+}
+@-webkit-keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+@-ms-keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+  100% {
+    background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+
+#santa {
+    position: absolute;
+    top: -100px; /* Hide Santa off screen to begin with */
+    left: -100px;
+    height: 200px; /* Set to the height of your Santa image */
+    width: 200px;
+    will-change: transform;
+  }
+
+
+
+/*----PC Only CSS----*/
+
+@media (min-width: 993px) {
+  
+ 
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 15px;
+    left: 37px;
+    position: relative;
+    color: yellow;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link:hover {
+    transform: scale(1.1);
+    color: #ffffff;
+  }
+
+  tokenomics-section div {
+    position: relative;
+    top: -75px;
+    left: 50px;
+  }
+  
+  .tax-box {
+    width: auto;
+  }
+
+
+  .dropdown-toggle:hover {
+    font-style: italic;
+  }
+  
+  .timeline-item-right .timeline-content {
+    width: 100%;
+  }
+  
+  .timeline-item-right {
+    width: 45vw;
+  }
+  
+  .timeline-item-left {
+    width: 93vw;
+    left: 5%;
+  }
+  
+
+}
+
+
+  /* Smaller Screens */
+  @media (max-width: 992px) {
+        
+    .intro .snowman {
+      display: none;
+    }
+    
+    .pup1 {
+      display: none;
+    }
+  
+    
+    .details-section {
+      padding-left: 15px;
+    }
+
+    .details-section div p {
+      width: auto !important;
+      font-size: 15px;
+    }
+    
+    .details-section .thinkingrobot {
+      display: none;
+    }
+
+    .tokenomics-section {
+      padding-left: 15px;
+      /* Less shift for smaller screens */
+    }
+
+    .tax-box {
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    .timeline:before {
+      left: clamp(3%, 2%, 1%);
+
+    }
+
+    .timeline-item {
+      padding: 30px 0;
+      left:5%;
+      border-radius: 10px;
+      width: 93vw;
+    }
+
+    .timeline-item-left .timeline-content,
+    .timeline-item-right .timeline-content {
+      position: relative;
+      width: 90%;
+      left: 0;
+      transform: none;
+      min-height: 150px;
+    }
+
+    .timeline-item-left .timeline-content:after,
+    .timeline-item-right .timeline-content:after {
+      content: " ";
+      position: absolute;
+      right: 100%;
+      top: 20px;
+      width: 0;
+      height: 0;
+      border: solid transparent;
+      border-width: 10px;
+      border-right-color: #000;
+      border-left: 0;
+      margin-top: -10px;
+      margin-right: -1px;
+      left: -1%;
+    }
+    
+
+
+  }

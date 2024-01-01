@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Presale - RoboPuppy (ROPU) Coin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+     <div class="popup" id="Spopup">
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border text-primary" role="status" id="buySpinner" style="position: relative; top: 50vh; width: 75px; height: 75px; border-width: 10px;">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="popup"> 
+      <div class="connectPopup">
+        <div class="closePopup" id="closePopup">
+          <i class="fa-solid fa-xmark fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="wallets">
+          <p>Recommended</p>
+          <div class="metamask" id="metamask">
+            <img src="./assets/MetaMask_Logo.png" style="position: relative; top: -5px; left: 5px; width: 50px; height: 50px;">
+            <p>Metamask</p>
+          </div>
+          <div class="trustwallet" id="trustwallet">
+            <img src="./assets/TrustWalletLogo.png" style="position: relative; top: -5px; left: 5px; width: 50px; height: 50px;">
+            <p>Trust Wallet</p>
+          </div>
+          <div class="binancewallet" id="binancewallet">
+            <img src="./assets/BSCWalletLogo2.png" style="position: relative; top: 5px; left: 15px; width: 30px; height: 30px;">
+            <p>Binance Wallet</p>
+          </div>
+          <div class="coinbase" id="coinbase">
+            <img src="./assets/BSCWalletLogo2.png" style="position: relative; top: 5px; left: 15px; width: 30px; height: 30px;">
+            <p>Coinbase</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid sec1 section" style="padding: 0px;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <div class="container-fluid">
+        <img src="../Logo.png" alt="Logo" width="60" height="55" class="d-inline-block align-text-top">
+        <a class="navbar-brand" href="#" style=" left: 10px;position: relative;FONT-SIZE: 30px;font-weight: bold;font-family: 'Kdam Thmor Pro', sans-serif; color: Orange ">ROPU</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="https://robopuppy.world">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="https://robopuppy.world/presale" class="nav-link active" aria-current="page" style="font-size: 17px; color: yellow;"><i>Presale ( ongoing )</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://robopuppy.world/whitepaper.pdf">Whitepaper</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://robopuppy.world/comingsoonpage">Staking</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="https://robopuppy.world/comingsoonpage" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Under Development</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Buy Section -->
+    <div class="container-fluid buy-section" style=" padding-bottom: 50px;">
+    <div class="row">
+      <div class="col-lg-7 details" style="padding-left: 50px;">
+        <h2 style="margin-top: 50px; margin-bottom: 50px; font-size: 50px; color: orange;">RO<span style="color:cyan">PU</span> Presale</h2>
+        <p style="font-size: 20px; color: black; ">We Are Currently in PRESALE. You can buy after Connecting a DEFI Wallet, by 
+          clicking the 'Connect Wallet' Button on the 'Presale Buy' Panel (For mobile please scroll down). 
+          To know details, please click <a href="https://robopuppy.world/presale/#howToBuy"  style="font-weight: bold; color: #fffed9;">'How to Buy'</a>
+          
+        <p style="font-size: 20px; color: black; ">We plan to have 3 Rounds during Presale, and allocated 400 million Tokens in Presale. <u> 
+          Presale Wallet: <span style="font-size: 18px; word-wrap: break-word">0xf27c578E0504dFf63A84B99916392ADE3653342d</span> [BSC Wallet]. </u>
+          For more details, click <a href="https://robopuppy.world/presale/#presale-stages" style="font-weight: bold; color: #fffed9;">Presale Stage</a></p>
+
+        <div class="presaleDetails">  
+          <li>Unsold Tokens in Each Presale Rounds will be Carried to Next Round.</li>
+          <li>At the End of All Presale Rounds, a Portion of Unsold Tokens to be Burnt.</li>
+          <li>Remaining Unsold Tokens to be Added to 'RESERVED' For Future.</li>
+
+          <li>Towards the end of ROUND-3, We may sell through Fairlaunch in PinkSale LaunchPad for 2 days.</li>
+           
+          <li>Before Actual Launch, the Tokens would be Airdropped to Buyers 12-18 hours in Advance. </li>
+          
+          <li>Tentative Launch Price is - 1 USDT = 850 ROPU (1 ROPU = $0.001176) </li>
+          
+        </div> <br>
+        <p style = "font-size:20px; color: blue;">
+          ROPU BUY LIMITS: <br>
+          > Single Transaction: Minimum Purchase: 40 USDT, And Maximum Purchase: 5000 USDT <br>
+          > Multiple Purchases Allowed By a Single Investor.
+        </p>  
+        
+      </div>
+      <div class="col-lg-5">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary text-center" style="margin: 50px;">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Presale Buy (Round-1)</h4>
+          </div>
+          <div class="card-body">
+   <!--         <h1 class="card-title pricing-card-title" style="font-size: 25px;"> 1 ROPU <small class="text-body-secondary fw-light"> = $<span id="priceUSDT"></span> </small></h1>
+    -->
+            <h1 class="card-title pricing-card-title" style="font-size: 25px; color: #cc33ff"> 1 ROPU  = <span id="priceUSDT" style="color: #cc33ff"></span> </h1>
+            <h1 class="card-title pricing-card-title" style="font-size: 20px;"> Next Price Increase:  <br> <small class="text-body-secondary"> <span id="npi"></span> </small></h1>
+            
+            <ul class="list-unstyled mt-3 mb-4">
+              <h1 class="card-title pricing-card-title" style="font-size: 20px;"> USDT Raised: </h1>
+              <div class="progress text-center" role="progressbar" style="height: 30px;">
+                <div id="bar" class="progress-bar overflow-visible" style="background-color: #00a5fe">
+                  <h3 class="card-title pricing-card-title" style="font-size: 135%; margin: 0px; color: red; margin-left: 5px;"> $<span id="valueRaised"></span> / $325,000 <small class="text-body-secondary fw-light" style="color: black!important; font-weight: bold!important"></small></h3>
+                </div>
+              </div>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary" id="connectWallet"> Connect Wallet </button>
+            <hr>
+            <div id="buyPart" style="display: none">
+              <h1 style="text-align: center; font-size: 18px;">Choose your Currency</h1>
+              <!--<button class="btn btn-lg px-3 btn-warning m-3" id="bnb"> <img src="./assets/BSCWalletLogo2.png" height="21px" width="21px" alt=""> BNB </button>
+              <button class="btn btn-lg px-3 btn-success m-3" id="usdt"> <img src="./assets/TetherUSDT.png" height="21px" width="21px" alt=""> USDT </button>-->
+              <button class="btn btn-primary active" id="bnb" style="width: 30%; margin-right: 10px;"> <img src="./assets/BSCWalletLogo2.png" height="21px" width="21px" alt=""> BNB </button>
+              <button class="btn btn-primary" id="usdt" style="width: 30%; margin-left: 10px;"> <img src="./assets/TetherUSDT.png" height="21px" width="21px" alt=""> USDT </button>
+              <p style="position: relative; left: 0px; text-align: center; font-size: 20px; width: auto; margin: 0px">Balance: <span id="balcur">BNB</span> <span id="usdtBalance"></span></p>
+              <p style="position: relative; left: 0px; text-align: center; font-size: 20px; width: auto; margin-bottom: 10px">Balance: <span id="balcur">ROPU</span> <span id="ROPUBalance"></span></p>
+              <hr style="height: 1px; width: 90%; background: gray; position: relative; margin-bottom: 15px;">
+              <div style="position: relative; margin: auto; display: inline-block; width: 45%">
+                <p style="position: relative; font-size: 15px; width: 100px; margin: 0px;"><b> Pay <span id="paycur">BNB</span></b></p>
+                <input type="text" style="width: 100%; height: 35px; border-radius: 100px; background: #00ffd542; border: solid #12c0a3; color: black" id="curinput">
+              </div>
+              <div style="position: relative; margin: auto; display: inline-block; width: 45%">
+                <p style="position: relative; font-size: 15px; width: 120px; margin: 0px;"><b> Get ROPU </b></p>
+                <input type="text" style="width: 100%; height: 35px; border-radius: 100px; background: #00ffd542; border: solid #12c0a3; color: black " id="ROPUinput">
+              </div>
+              <p id="error" style="position: relative; font-size: 15px; color: red; text-align: center; margin: 15px"></p>
+              <button type="button" class="w-100 btn btn-lg btn-primary" id="buyButton" style="opacity: 40%;" disabled> Buy ROPU </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+    
+     <!--  PRESALE  STAGES  -->
+    <div class="container-fluid presale-stages" style=" padding-bottom: 50px; background: rgb(44,36,173); background: linear-gradient(45deg, rgba(44,36,173,1) 0%, rgba(28,28,226,1) 2%, rgba(0,212,255,1) 100%);">
+      <h1 class="text-center" style="color: orange; position: relative; top: 20px; font-size: 50px;"> Presale Stage </h1>
+      <div class="row" style="margin: 50px">
+        <div class="col-lg-4" style="margin-bottom: 25px;">
+          <div class="card" style="width: 100%;">
+            <div class="card-body text-center">
+              <h5 class="card-title">Round-1</h5>
+              <a href="#" class="btn btn-primary">Started on 24-Dec-2023</a>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">1 USDT = 1500 ROPU (1 ROPU = $0.000667)</li>
+              <li class="list-group-item">Days: 24-Dec-2023 - 23-Jan-2024</li>
+              <li class="list-group-item">ROPU Allocation: 120 million</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-lg-4" style="margin-bottom: 25px;">
+          <div class="card" style="width: 100%;">
+            <div class="card-body text-center">
+              <h5 class="card-title">Round-2</h5>
+              <a href="#" class="btn btn-primary">Starting On 24-Jan-2024</a>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">1 USDT = 1250 ROPU (1 ROPU = $0.00080)</li>
+              <li class="list-group-item">Days: 24-Jan-2024 - 23-Feb-2024</li>
+              <li class="list-group-item">ROPU Allocation: 140 million </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-lg-4" style="margin-bottom: 25px;">
+          <div class="card" style="width: 100%;">
+            <div class="card-body text-center">
+              <h5 class="card-title">Round-3</h5>
+              <a href="#" class="btn btn-primary">Starting On 23-Feb-2024</a>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">1 USDT = 1050 ROPU (1 ROPU = $0.00095)</li>
+              <li class="list-group-item">Days: 23-Feb-2024 - 24-Mar-2024</li>
+              <li class="list-group-item">ROPU Allocation: 140 million</li>
+            </ul>
+          </div>
+        </div>
+      </div>  
+    </div>
+     
+         <!--  How to Buy  -->
+    
+    <div class="container-fluid" id="howToBuy" style="position: relative; padding-bottom: 50px; background: -webkit-linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);">
+      <div style="position: relative; top: 25px; left: 50%; transform: translate(-50%); background-color: #f0e0e0; width: 90vw; border-radius: 10px; padding: 50px">
+        <h1 class="text-center" style="margin-bottom: 25px; font-weight: bold; font-size: 40px; color: brown;"> HOW TO BUY </h1>
+        <h2 class="htbHeaders">Note:</h2>
+        <div class="htbSDiv" style="--htbSDivO: 1">
+            <p class="htbNote">1. You can't buy more than 5000 USDT, or less than 40 USDT in a single Transaction.</p>
+            <p class="htbNote">2. USDT is disabled in Metamask Wallet ON MOBILE devices. </p>
+            <p class="htbNote">3. Safari Browser can NOT be used in Mac/ Laptop, as Wallet Extensions are not allowed in Safari.</p>
+            <p class="htbNote">4. If you dont have Metamask, Trust or Coinbase Wallets, then you can send to our Presale address (given above) 
+              from your any BSC-Network supported DeFi Wallet. Please intimate us in our Telegram Support.</p>
+          
+        </div>
+        <h2 class="htbHeaders">A. BUY Using Laptop / PC of Windows / Mac / Linux (Brave/ Chrome/ Firefox/ Edge)</h2>
+        <div class="htbSDiv" style="--htbSDivO: 1">
+            <p class="htbSteps">1. Open any of the Browsers - Brave, Chrome, Firefox, Edge</p>
+           <p class="htbSteps">(Note: For Firefox and Edge Browsers, Only Metamask Wallet Extension is Supported)</p>  
+            <p class="htbSteps">2. Go to our Presale page (https://robopuppy.world/presale) to buy.</p>
+            <p class="htbSteps">3. Click 'Connect Wallet' Button. Select the wallet you want to Connect with.</p>
+            <p class="htbSteps">4. After connection, make sure your Wallet is in BSC Network. </p>
+            <p class="htbSteps">5. Select one of the Currencies- BNB or USDT. If you select USDT, You still have to have little BNB for Gas Fees.</p>
+            <p class="htbSteps">6. In the 'Pay BNB' or, 'Pay USDT' field, give the amount of the (USDT/BNB) you want to spend. In the next field ('Get ROPU') You will see the amount of ROPU that you would get. </p>
+            <p class="htbSteps">7. Then click 'Buy ROPU' button. A loading screen will appear. Wait until 'Buy' popup from your Wallet will appear. Scroll down in the popup. </p>
+            <p class="htbSteps">8. If you encounter an Error now, or before, then follow the instructions stated in the error. If you still face issue, please contact us in Telegram Support.</p>
+            <p class="htbSteps">9. If you see 'Succesfully bought ROPU' alert, it's DONE! Congrats on buying ROPU. Then your page will refresh, and you can see your ROPU Balance below BNB/USDT balance.
+            </p>
+        </div>
+        <h2 class="htbHeaders">B. BUY Using Mobile / Tablets of Android / IOS</h2>
+        <div class="htbSDiv" style="--htbSDivO: 1">
+            <p class="htbHeaders">* Metamask Wallet *</p>
+            <div class="htbSDiv" style="--htbSDivO: 2">
+                <p class="htbSteps">a. Open any of the Browsers listed above. Alternatively, You may open Metamask wallet</p>
+                <div class="htbSDiv" style="--htbSDivO: 3">
+                    <p class="htbSteps">i. If you opened the Metamask Wallet, then in the bottom menu, click the Browsing Icon (looks like compass, 2nd last) then write our presale page URL (https://robopuppy.world/presale). </p>
+                    <p class="htbSteps">ii. If you opened regular browser (Chrome, Brave, etc.), then go to our presale page URL (https://robopuppy.world/presale).</p>
+                </div>
+                <p class="htbSteps">b. Scroll down the page, until you see 'Connect Wallet' button and click it, click Metamask. Authenticate yourself if prompted.</p>
+                <p class="htbSteps">c. You will have BNB default selected. (Note: You can't select USDT as it's Disabled.)</p>
+                <p class="htbSteps">d. In the 'Pay BNB', give the amount of BNB you want to spend. In the next Field ('Get ROPU') You will see the amount of ROPU that you would get. Remember to have little extra BNB for Gas Fees. </p>
+                <p class="htbSteps">e. Click 'Buy ROPU' button. A Metamask Buy popup will appear. Check details in the popup and click 'Confirm'.</p>
+                <p class="htbSteps">f. Upon succesful buy, you would get an alert 'Succesfully bought ROPU'. Congrats!</p>
+            </div>
+            <p class="htbHeaders">* Trust Wallet *</p>
+            <div class="htbSDiv" style="--htbSDivO: 2">
+                <p class="htbSteps">a. Open Trust Wallet in your mobile. Don't open any Browser, like, Chrome, Brave, etc.</p>
+                <p class="htbSteps">b. Click 'Browser' icon at the bottom right corner (looks like compass). Trust Wallet Browser opens. In the Search 
+    bar, write the presale page URL (https://robopuppy.world/presale).</p>
+                <p class="htbSteps">c. Scroll down the page, until you see 'Connect Wallet' Button and click it, and then click Trust. Authenticate yourself if prompted.</p>
+                <p class="htbSteps">d. Now select your desired currency (BNB/USDT). Remember to have little BNB for Gas Fees.</p>
+                <p class="htbSteps">e. In the 'Pay BNB' or, 'Pay USDT' field, give the amount of the (BNB/USDT) you want to spend. In the next Field ('Get ROPU') You will see the amount of ROPU that you would get. </p>
+                <p class="htbSteps">f. Click 'Buy ROPU' button. A Trust Buy popup will appear. Check details in the popup and click 'Confirm'.</p>
+                <p class="htbSteps">g. Upon succesful buy, you would get an alert 'Succesfully bought ROPU'. Congrats!</p>
+            </div>
+            <p class="htbHeaders">* Coinbase Wallet *</p>
+            <div class="htbSDiv" style="--htbSDivO: 2">
+                <p class="htbSteps">a. Open any of the Browsers listed above. Alternatively, like Metamask, You can open Coinbase wallet.</p>
+                <div class="htbSDiv" style="--htbSDivO: 3">
+                    <p class="htbSteps">i) If you opened the Coinbase Wallet, in the Bottom Menu, click the Browser icon in the Center (looks like Web) and then write the presale page URL (https://robopuppy.world/presale) and load it.</p>
+                    <p class="htbSteps">ii) If you opened normal Browser like, Brave, Chrome etc., Load presale page URL (https://robopuppy.world/presale).</p>
+                </div>
+                <p class="htbSteps">b. Scroll down the page, until you see 'Connect Wallet' Button and click it, then click Coinbase. Authenticate yourself if prompted.</p>
+                <p class="htbSteps">c. Now select your desired currency (BNB/USDT). Remember to have little BNB for Gas Fees.</p>
+                <p class="htbSteps">d. In the 'Pay BNB' or, 'Pay USDT' field, give the amount of the (BNB/USDT) you want to spend. In the next Field ('Get ROPU') You will see the amount of ROPU that you would get.</p>
+                <p class="htbSteps">e. Click 'Buy ROPU' button. A Coinbase 'Buy' popup will appear. Check details in the popup and click 'Confirm'.</p>
+                <p class="htbSteps">f. Upon succesful buy, you would get an alert 'Succesfully bought ROPU'. Congrats!</p>
+            </div>          
+        </div>
+      </div>
+    </div>
+      
+         <!--  Footer  -->
+     <div class="container" style="">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3" style="width: fit-content; margin-right: clamp(18px, 19px, 20px);">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="https://robopuppy.world/#tokenomics-section" class="nav-link p-0 text-body-secondary">Tokenomics</a></li>
+              <li class="nav-item mb-2"><a href="https://robopuppy.world/#roadmap-section" class="nav-link p-0 text-body-secondary">Roadmap</a></li>
+              <li class="nav-item mb-2"><a href="https://robopuppy.world/#faq-section" class="nav-link p-0 text-body-secondary">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2 mb-3" style="width: fit-content">
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="https://robopuppy.world/terms" class="nav-link p-0 text-body-secondary">Terms of Use</a></li>
+              <li class="nav-item mb-2"><a href="https://robopuppy.world/privacy" class="nav-link p-0 text-body-secondary">Privacy Policy</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Smart Contract Audit</a></li>
+            </ul>
+          </div>
+          <div class="col-md-5 offset-md-1 mb-3">
+			<ul class="list-unstyled d-flex" style="position: relative; left: 50%; transform: translate(-50%); width: fit-content;">
+            <li class="ms-3">
+              <a href="https://t.me/robopuppy" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Telegram"><i class="fa-brands fa-telegram fa-2x"></i></a>
+            </li>
+            <li class="ms-3">
+              <a href="https://discord.gg/cgERzrmmQN" target="_blank" data-bs-toggle="tooltip" data-bs-title="Discord"><i class="fa-brands fa-discord fa-2x"></i></a>
+            </li>
+            <li class="ms-3">
+              <a href="https://twitter.com/RoboPuppy23" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Twitter"><i class="fa-brands fa-twitter fa-2x"></i></a>
+            </li>
+          </ul>
+            <p style="position: relative;
+              left: 50%;
+              transform: translate(-50%);
+              text-decoration-line: none;
+              width: fit-content;"> support@robopuppy.world </p>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p style="position: relative; left: 50%; transform: translate(-50%); width: fit-content;">Copyright &copy; 2023 RoboPuppy.World. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@coinbase/wallet-sdk@3.7.2/dist/index.min.js"></script>
+    <script src="https://unpkg.com/@walletconnect/web3-provider@1.8.0/dist/umd/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.1.2/web3.min.js" integrity="sha512-SY8ZHHpr1VtCWQ3a+YWBORQfRmBCZeSWgR5YJ7gW3XyhylLfIjPjva9fPc9xrjgFxFA95+7+ch7i15ykPiVcLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>
